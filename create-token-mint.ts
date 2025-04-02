@@ -4,7 +4,7 @@ import { Keypair, clusterApiUrl, Connection } from "@solana/web3.js";
 import { createMint } from "@solana/spl-token";
 import bs58 from "bs58";
 
-let privateKey = process.env["PRIVATE_KEY_SLV"];
+const privateKey = process.env["PRIVATE_KEY_SLV"];
 if (privateKey === undefined) {
   console.log("Add PRIVATE_KEY_SLV to .env!");
   process.exit(1);
