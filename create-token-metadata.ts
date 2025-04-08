@@ -16,11 +16,11 @@ const user = Keypair.fromSecretKey(pk);
 
 const connection = new Connection(clusterApiUrl("devnet"));
 const TOKEN_METADATA_PROGRAM_ID = new PublicKey("metaqbxxUerdq28cj1RbAWkYQm3ybzjb6a8bt518x1s");
-const tokenMintAccount = new PublicKey("AE7AqHZwLw9nvPSpvYFDwwWp68dBsEzQqknWqWguQt1h");
+const tokenMintAccount = new PublicKey("AYEDMh8iLbF7osVqqQrnyjdWxWGUJnua1KUu5nSZPajW");
 
 const metadataData = {
-  name: "Solana Bootcamp Training",
-  symbol: "SBT",
+  name: "Most Beautiful Token from Solana",
+  symbol: "MBTS",
   // Arweave / IPFS / Pinata etc link using metaplex standard for off-chain data
   uri: "https://arweave.net/1234",
   sellerFeeBasisPoints: 0,

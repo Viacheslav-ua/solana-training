@@ -15,7 +15,7 @@ const connection = new Connection(clusterApiUrl("devnet"));
 
 console.log(`🔑 Our public key is: ${sender.publicKey.toBase58()}`);
 
-const tokenMintAccount = new PublicKey("AE7AqHZwLw9nvPSpvYFDwwWp68dBsEzQqknWqWguQt1h");
+const tokenMintAccount = new PublicKey("AYEDMh8iLbF7osVqqQrnyjdWxWGUJnua1KUu5nSZPajW");
 const recipient = new PublicKey("9z7uYi1HuhYDsrPoQ8j4PU6XHSht3uiBQD8PjyHxQNrj");
 
 const tokenAccount = await getOrCreateAssociatedTokenAccount(

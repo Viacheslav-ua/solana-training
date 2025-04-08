@@ -13,8 +13,8 @@ const pk = bs58.decode(privateKey);
 const sender = Keypair.fromSecretKey(pk);
 const connection = new Connection(clusterApiUrl("devnet"));
 const MINOR_UNITS_PER_MAJOR_UNITS = Math.pow(10, 2);
-const tokenMintAccount = new PublicKey("AE7AqHZwLw9nvPSpvYFDwwWp68dBsEzQqknWqWguQt1h");
-const recipientAssociatedTokenAccount = new PublicKey("DV3DYpmvVh3ccUu4M77cArYEpNJn6TDxs6DzypuZtFbP");
+const tokenMintAccount = new PublicKey("AYEDMh8iLbF7osVqqQrnyjdWxWGUJnua1KUu5nSZPajW");
+const recipientAssociatedTokenAccount = new PublicKey("3VgiYHWQn68HAvfe1KBE4NiBA19STm3bjhTghG3xAKAX");
 
 const transactionSignature = await mintTo(
   connection,

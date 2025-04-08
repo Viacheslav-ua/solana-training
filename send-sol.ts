@@ -26,19 +26,19 @@ const sender = Keypair.fromSecretKey(asArray);
 const recipient = new PublicKey(publicKeyRecipient)
 const connection = new Connection(clusterApiUrl("devnet"));
 const memoProgram = new PublicKey("MemoSq4gqABAXKb96qnH8TysNcWxMyWCqXgDLGmfcHr");
-const memoText = "Hello from Solana!";
+const memoText = "My new text is here!";
 
 console.log(`🔑 Our public key is: ${sender.publicKey.toBase58()}`);
 console.log(`🔑 Recipient public key is: ${recipient}`);
 console.log(`Memo Text is: ${memoProgram}`);
-console.log(`💸 Attempting to send 0.01 SOL to ${recipient.toBase58()}...`);
+console.log(`💸 Attempting to send 0.02 SOL to ${recipient.toBase58()}...`);
 
 const tx = new Transaction();
 
 const sendSolInstruction = SystemProgram.transfer({
   fromPubkey: sender.publicKey,
   toPubkey: recipient,
-  lamports: 0.01 * LAMPORTS_PER_SOL,
+  lamports: 0.02 * LAMPORTS_PER_SOL,
 });
 
 const addMemoInstruction = new TransactionInstruction({
